@@ -24,6 +24,12 @@
     color: white;
 }
 
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 80%;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
 }
@@ -93,4 +99,35 @@ footer{
     font-family: 'Raleway';
     text-align: center;
     font-size: 16px;
+    padding: 16px 0;
+}
+
+footer div{
+    background-color:  #EAF2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    gap: 115px;
+}
+
+
+footer div li{
+    display: block;
+}
+
+footer label {
+    font-weight: bold;
+}
+
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.rodape{
+    padding: 16px;
 }
