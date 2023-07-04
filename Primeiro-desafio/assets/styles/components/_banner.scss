@@ -1,25 +1,35 @@
+@import '../abstract/variaveis';
+
 .banner{
-    position: absolute;
-    top: 280px;
-    left: 100px;
-    line-height: 50px;
+    background: url(../../../../Primeiro-desafio/assets/imgs/banner.png) center;
+    background-size: cover;
+    min-width:100%;
+    min-height:192px;
+    opacity: 1;
+    display: flex;
+    align-items: end;
 
-    h2{
-        font-size: 52px;
-        font-weight: bold;
-        color: white;
+    .inner--banner{
+
+        padding:0 0px 16px 8px;
+        .banner__titulo{
+            font-size: $fonte-promocional;
+            font-weight: 700;
+            color:$cor-banner;
+            
+        }
+        .banner__descricao{
+            font-size: $fonte-padrao;
+            padding: 12px 0 10px;
+            color:$cor-banner;
+        }
+
+        .banner__botao{
+            background-color: #2A7AE4;
+            width: 120px;
+            height: 40px;
+            color:$cor-banner;
+        }
     }
 
-    p{
-        font-size: 22px;
-        font-weight: bold;
-        color: white;
-    }
-
-    #botao__imagem{
-        background-color: #2A7AE4;
-        width: 130px;
-        height: 51px;
-        color: white;
-    }
 }
