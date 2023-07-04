@@ -1,0 +1,25 @@
+.banner{
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    line-height: 50px;
+
+    h2{
+        font-size: 52px;
+        font-weight: bold;
+        color: white;
+    }
+
+    p{
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #botao__imagem{
+        background-color: #2A7AE4;
+        width: 130px;
+        height: 51px;
+        color: white;
+    }
+}

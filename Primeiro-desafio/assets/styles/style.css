@@ -1,0 +1,63 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.cabecalho {
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cabecalho .cabecalho__search {
+  display: none;
+}
+.cabecalho .cabecalho__botao {
+  border: 1px solid #2A7AE4;
+  color: #2A7AE4;
+  background-color: #FFFFFF;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 144px;
+  height: 48px;
+}
+
+.banner {
+  position: absolute;
+  top: 280px;
+  left: 100px;
+  line-height: 50px;
+}
+.banner h2 {
+  font-size: 52px;
+  font-weight: bold;
+  color: white;
+}
+.banner p {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+.banner #botao__imagem {
+  background-color: #2A7AE4;
+  width: 130px;
+  height: 51px;
+  color: white;
+}
+
+.produtos__section {
+  padding: 30px 0;
+}
+.produtos__section h3 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.produtos__section ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.produtos__section ul li a {
+  text-decoration: none;
+  color: #2A7AE4;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

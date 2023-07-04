@@ -1,0 +1,27 @@
+.cabecalho{
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cabecalho__search{
+        display: none;
+    }
+   
+    .cabecalho__botao{
+        border: 1px solid #2A7AE4;
+        color: #2A7AE4;
+        background-color: #FFFFFF;
+        transition: 0.5s;
+        cursor: pointer;
+        width:144px;
+        height: 48px;
+    }
+}
+
+
+
+
+
+
+

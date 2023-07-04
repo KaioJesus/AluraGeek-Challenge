@@ -5,63 +5,59 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AluraGeek - Home</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles/reset.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
     </head>
     <body>
         <header class="cabecalho">
-            <div class="cabecalho__titulo-pesquisa">
-                <h1 class="cabecalho__titulo"><a href=""><img src="assets/logo.png"/></a></h1>
-                <div class="cabecalho__search--button">
-                    <input id="pesquisa" class="cabecalho__search--button--campo" type="text" placeholder="O que voce deseja encontrar?"/>
-                    <img src="assets/lupa.png" alt="Lupa no campo de pesquisa">
-                </div>
-            </div>
+            <h1 class="cabecalho__logo"><a href="#"><img src="./assets/imgs/Logo.png"/></a></h1>
+            <input class="cabecalho__search" type="text" placeholder="O que voce deseja encontrar?"/>
             <input class="cabecalho__botao" type="button" value="Login"/>
+            <img src="./assets/imgs/lupa.svg" alt="Lupa no campo de pesquisa">
         </header>
-        <img src="assets/banner-image.png" alt="Banner de cogumelo que ocupa a largura da tela"/>
-        <div class="banner">
-            <h2>Dezembro Promocional</h2>
-            <p>Produtos selecionados com 33% de desconto</p>
-            <input id="botao__imagem" type="button" value="Ver consoles">
-        </div>
         <main>
+            <section class="banner">
+                <!-- <img src="./assets/imgs/banner-image.png" alt="Banner de cogumelo que ocupa a largura da tela"/> -->
+                <h2>Dezembro Promocional</h2>
+                <p>Produtos selecionados com 33% de desconto</p>
+                <input id="botao__imagem" type="button" value="Ver consoles">
+            </section>
             <section class="produtos__section">
                 <h3>Star wars</h3>
                 <ul>
                     <li>
-                        <img src="assets/unsplash_6FDXGY9J6y4.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_6FDXGY9J6y4.png" alt="Caneca stormtrooper">
                         <p>Produto XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_epRFE_hBNjo.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_epRFE_hBNjo.png" alt="Caneca stormtrooper">
                         <p>Produto XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_KeGToDVN0l4.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_KeGToDVN0l4.png" alt="Caneca stormtrooper">
                         <p>Produto XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_4OHkK555s1A.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_4OHkK555s1A.png" alt="Caneca stormtrooper">
                         <p>Produto XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_R8L1l9RN198.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_R8L1l9RN198.png" alt="Caneca stormtrooper">
                         <p>Produto XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_1VV1MRafd7A.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_1VV1MRafd7A.png" alt="Caneca stormtrooper">
                         <p>Produto XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
@@ -72,37 +68,37 @@
                 <h3>Consoles</h3>
                 <ul>
                     <li>
-                        <img src="assets/unsplash_0POwK6iAiRQ.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_0POwK6iAiRQ.png" alt="Caneca stormtrooper">
                         <p>Controle XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_caNzzoxls8Q.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_caNzzoxls8Q.png" alt="Caneca stormtrooper">
                         <p>Controle e console XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_ZV7lnfyQLmA.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_ZV7lnfyQLmA.png" alt="Caneca stormtrooper">
                         <p>Console XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_wa5z9o9fgjw.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_wa5z9o9fgjw.png" alt="Caneca stormtrooper">
                         <p>Controle XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_Zjn4dT993-g.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_Zjn4dT993-g.png" alt="Caneca stormtrooper">
                         <p>Game Boy Color</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_k-xYhI3-gJM.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_k-xYhI3-gJM.png" alt="Caneca stormtrooper">
                         <p>Produto XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
@@ -113,37 +109,37 @@
                 <h3>Diversos</h3>
                 <ul>
                     <li>
-                        <img src="assets/unsplash_fMP-oCze3AY.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_fMP-oCze3AY.png" alt="Caneca stormtrooper">
                         <p>Camisa Atari</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_bUgaIaZysH0.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_bUgaIaZysH0.png" alt="Caneca stormtrooper">
                         <p>Camisa SNES</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_sYVY_ZKwaxU.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_sYVY_ZKwaxU.png" alt="Caneca stormtrooper">
                         <p>Controle e console XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_jMT6BrgBuXU.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_jMT6BrgBuXU.png" alt="Caneca stormtrooper">
                         <p>Controle e console XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_MxVkWPiJALs.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_MxVkWPiJALs.png" alt="Caneca stormtrooper">
                         <p>Controle e console XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
                     </li>
                     <li>
-                        <img src="assets/unsplash_r27umXAelDc.png" alt="Caneca stormtrooper">
+                        <img src="./assets/imgs/unsplash_r27umXAelDc.png" alt="Caneca stormtrooper">
                         <p>Controle e console XYZ</p>
                         <p>R$ 60,00</p>
                         <a href="">Ver produto</a>
@@ -151,36 +147,36 @@
                 </ul>
             </section>
         </main>
+        <footer>
+            <div>
+                <img src="./assets/imgs/Logo.png" alt="Logo da AluraGeek">
+                <ul>
+                    <li>
+                        <a href="">Quem somos nós</a>
+                    </li>
+                    <li>
+                        <a href="">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="">Programa fidelidade</a>
+                    </li>
+                    <li>
+                        <a href="">Nossas lojas</a>
+                    </li>
+                    <li>
+                        <a href="">Quero ser franqueado</a>
+                    </li>
+                    <li>
+                        <a href="">Anuncie aqui</a>
+                    </li>
+                </ul>
+                <label for="faleConosco">Fale conosco</label>
+                <input class="input-padrao" type="text" placeholder="Nome" id="faleConosco">
+                <textarea cols="70" rows="10" class="input-padrao">
+                </textarea>
+            </div>
+            <p>Desenvolvido por Kaio</p>
+            <p>2022</p>
+        </footer>
     </body>
-    <footer>
-        <div>
-            <img src="assets/Logo.png" alt="Logo da AluraGeek">
-            <ul>
-                <li>
-                    <a href="">Quem somos nós</a>
-                </li>
-                <li>
-                    <a href="">Política de privacidade</a>
-                </li>
-                <li>
-                    <a href="">Programa fidelidade</a>
-                </li>
-                <li>
-                    <a href="">Nossas lojas</a>
-                </li>
-                <li>
-                    <a href="">Quero ser franqueado</a>
-                </li>
-                <li>
-                    <a href="">Anuncie aqui</a>
-                </li>
-            </ul>
-            <label for="faleConosco">Fale conosco</label>
-            <input class="input-padrao" type="text" placeholder="Nome" id="faleConosco">
-            <textarea cols="70" rows="10" class="input-padrao">
-            </textarea>
-        </div>
-        <p>Desenvolvido por Kaio</p>
-        <p>2022</p>
-    </footer>
 </html>
