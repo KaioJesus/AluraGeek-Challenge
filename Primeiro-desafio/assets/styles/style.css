@@ -34,7 +34,7 @@ body {
   padding: 0 0px 16px 8px;
 }
 .banner .inner--banner .banner__titulo {
-  font-size: 1.35rem;
+  font-size: 1.375rem;
   font-weight: 700;
   color: #ffffff;
 }
@@ -50,20 +50,27 @@ body {
   color: #ffffff;
 }
 
-.produtos__section {
-  padding: 30px 0;
+.section__products {
+  padding: 16px 12px;
 }
-.produtos__section h3 {
-  font-size: 32px;
-  font-weight: bold;
-  padding-bottom: 10px;
+.section__products .section__products--div {
+  display: flex;
+  justify-content: space-between;
 }
-.produtos__section ul li {
-  display: inline-block;
-  margin-left: 10px;
+.section__products .section__products--div .section__product--title {
+  font-size: 1.375rem;
+  color: #464646;
+  font-weight: 700;
 }
-.produtos__section ul li a {
-  text-decoration: none;
+.section__products .section__products--div .section__products--anchor {
   color: #2A7AE4;
   font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.section__products .section__lista-produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 16px;
+  margin: 24px 0;
 }/*# sourceMappingURL=style.css.map */
