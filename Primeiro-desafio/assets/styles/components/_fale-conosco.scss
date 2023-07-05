@@ -37,10 +37,39 @@
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px;
                 margin: 8px 0;
+                width: 98%;
+                height: 48px;
                 border: none;
                 border-bottom: 1px solid gray;
+                padding: 2px 4px;
+
+                &::placeholder{
+                  padding: 4px 4px;  
+                  font-size: $fonte-padrao - 2,4px;
+                }
+            }
+
+            .formulario__textarea{
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                margin: 8px 0;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid gray;
+                padding: 4px 0;
+                &::placeholder{
+                    padding: 12px 8px;  
+                    font-size: $fonte-padrao + 0,2px
+                  }
+            }
+
+            .formulario__botao{
+                background-color: #2A7AE4;
+                width: 150px;
+                height: 40px;
+                color:$cor-banner;
+                border: none;
             }
         }
-
     }
 }
