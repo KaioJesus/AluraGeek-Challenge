@@ -19,13 +19,29 @@
         }
     }
 
-    .section__lista-produtos{
+    .lista__produtos{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px 16px;
+        place-items: center;
+        gap: 16px 8px;
         margin: 24px 0;
 
-        .section_item-anchor{
+        .list-item{
+            margin: 16px 0;
+        }
+
+        .item__descricao{
+            padding-top: 4px;
+        }
+
+        .item__preco{
+            padding: 6px 0;
+            color: $cor-texto-padrao;
+            font-weight: 700;
+        }
+
+        .item__anchor{
+            padding: 8px 0 4px 0;
             text-decoration: none;
             color: $cor-ancora;
             font-weight: 700;

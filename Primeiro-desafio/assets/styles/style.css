@@ -68,13 +68,26 @@ body {
   text-decoration: none;
   font-size: 0.9rem;
 }
-.section__products .section__lista-produtos {
+.section__products .lista__produtos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px 16px;
+  place-items: center;
+  gap: 16px 8px;
   margin: 24px 0;
 }
-.section__products .section__lista-produtos .section_item-anchor {
+.section__products .lista__produtos .list-item {
+  margin: 16px 0;
+}
+.section__products .lista__produtos .item__descricao {
+  padding-top: 4px;
+}
+.section__products .lista__produtos .item__preco {
+  padding: 6px 0;
+  color: #464646;
+  font-weight: 700;
+}
+.section__products .lista__produtos .item__anchor {
+  padding: 8px 0 4px 0;
   text-decoration: none;
   color: #2A7AE4;
   font-weight: 700;
