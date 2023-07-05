@@ -31,7 +31,7 @@ body {
   align-items: end;
 }
 .banner .inner--banner {
-  padding: 0 0px 16px 8px;
+  padding: 0 0px 16px 12px;
 }
 .banner .inner--banner .banner__titulo {
   font-size: 1.375rem;
@@ -73,4 +73,49 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 16px 16px;
   margin: 24px 0;
+}
+.section__products .section__lista-produtos .section_item-anchor {
+  text-decoration: none;
+  color: #2A7AE4;
+  font-weight: 700;
+}
+
+.rodape {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.section__fale-conosco {
+  background: #EAF2FD;
+}
+.section__fale-conosco .section__fale-conosco-div__logo {
+  text-align: center;
+}
+.section__fale-conosco .section__fale-conosco-ajudas {
+  text-align: center;
+}
+.section__fale-conosco .section__fale-conosco-ajudas .lista__fale-conosco {
+  margin: 8px 0;
+}
+.section__fale-conosco .section__fale-conosco-ajudas .lista__fale-conosco .item__fale-conosco {
+  padding: 8px;
+}
+.section__fale-conosco .section__fale-conosco-ajudas .lista__fale-conosco .item__fale-conosco .ancora__fale-conosco {
+  text-decoration: none;
+  color: #464646;
+}
+.section__fale-conosco .formulario {
+  padding: 8px 12px;
+}
+.section__fale-conosco .formulario .formulario__campos .formulario__titulo {
+  font-size: 0.9rem, 2px;
+  font-weight: 700;
+}
+.section__fale-conosco .formulario .formulario__campos .formulario__input {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid gray;
 }/*# sourceMappingURL=style.css.map */

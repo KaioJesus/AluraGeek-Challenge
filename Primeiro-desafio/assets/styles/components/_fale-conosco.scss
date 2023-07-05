@@ -1,0 +1,46 @@
+@import '../abstract/variaveis';
+
+.section__fale-conosco{
+    background: $cor-de-fundo;
+
+    .section__fale-conosco-div__logo{
+        text-align: center;
+    }
+    .section__fale-conosco-ajudas{
+        text-align: center;
+
+        .lista__fale-conosco{
+            margin: 8px 0;
+
+            .item__fale-conosco{
+                padding: 8px;
+
+                .ancora__fale-conosco{
+                    text-decoration: none;
+                    color: $cor-texto-padrao;
+                }
+            }
+        }
+    }
+
+    .formulario{
+        padding: 8px 12px;
+
+        .formulario__campos{
+
+            .formulario__titulo{
+                font-size: $fonte-padrao + 0,2px;
+                font-weight: 700;
+
+            }
+            .formulario__input{
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                margin: 8px 0;
+                border: none;
+                border-bottom: 1px solid gray;
+            }
+        }
+
+    }
+}

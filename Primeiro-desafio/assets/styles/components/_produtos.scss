@@ -24,5 +24,11 @@
         grid-template-columns: 1fr 1fr;
         gap: 16px 16px;
         margin: 24px 0;
+
+        .section_item-anchor{
+            text-decoration: none;
+            color: $cor-ancora;
+            font-weight: 700;
+        }
     }
 }
