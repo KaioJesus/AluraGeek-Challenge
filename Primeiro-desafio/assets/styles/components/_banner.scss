@@ -11,7 +11,7 @@
 
     .inner--banner{
 
-        padding:0 0px 16px 12px;
+        padding:0 0px 16px 16px;
         
         .banner__titulo{
             font-size: $fonte-promocional;
@@ -34,4 +34,42 @@
         }
     }
 
+}
+
+@media screen and (min-width: 768px) {
+
+    .banner{
+        .inner--banner{
+    
+            padding:0 0px 16px 32px;
+        }
+    
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+    .banner{
+        height: 352px;
+        .inner--banner{
+            // margin: 32px 0; 
+            padding: 64px 128px 24px;
+
+            .banner__titulo{
+                font-size: $fonte-titulo-banner;
+                font-weight: 700;
+                color:$cor-banner;
+                
+            }
+
+            .banner__descricao{
+                font-size: $fonte-texto-banner;
+                padding: 20px 0 16px;
+                color:$cor-banner;
+            }
+        }
+    
+    }
+    
 }

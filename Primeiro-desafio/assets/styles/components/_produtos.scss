@@ -1,6 +1,6 @@
 
 .section__products{
-    padding: 16px 12px;
+    padding: 16px 16px;
     .section__products--div{
         display: flex;
         justify-content: space-between;
@@ -62,7 +62,7 @@
     
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
 
     .section__products{
         padding: 16px 32px;
@@ -80,7 +80,7 @@
     .section__products{
         .lista__produtos{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             place-items: center;
         }
     }
@@ -95,10 +95,13 @@
         .section__products--div{
             padding: 0 8px;
 
-            .lista__produtos{
-                margin: 12px 0;
-            }   
         }
+        .lista__produtos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            place-items: center;
+            margin: 12px 0;
+        }   
         
     }
     

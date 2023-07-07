@@ -22,6 +22,30 @@ body {
   height: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .cabecalho {
+    padding: 24px 32px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .section__products .lista__produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section__products {
+    margin: 32px 0;
+    padding: 16px 128px;
+  }
+  .section__products .section__products--div {
+    padding: 0 8px;
+  }
+  .section__products .section__products--div .lista__produtos {
+    margin: 12px 0;
+  }
+}
 .banner {
   background: url(../../../../Primeiro-desafio/assets/imgs/banner.png) center;
   background-size: cover;
@@ -32,7 +56,7 @@ body {
   align-items: end;
 }
 .banner .inner--banner {
-  padding: 0 0px 16px 12px;
+  padding: 0 0px 16px 16px;
 }
 .banner .inner--banner .banner__titulo {
   font-size: 1.375rem;
@@ -52,8 +76,31 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .banner .inner--banner {
+    padding: 0 0px 16px 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .banner {
+    height: 352px;
+  }
+  .banner .inner--banner {
+    padding: 64px 128px 24px;
+  }
+  .banner .inner--banner .banner__titulo {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .banner .inner--banner .banner__descricao {
+    font-size: 1.375rem;
+    padding: 20px 0 16px;
+    color: #ffffff;
+  }
+}
 .section__products {
-  padding: 16px 12px;
+  padding: 16px 16px;
 }
 .section__products .section__products--div {
   display: flex;
@@ -105,7 +152,7 @@ body {
     place-items: center;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .section__products {
     padding: 16px 32px;
   }
@@ -118,7 +165,7 @@ body {
 @media screen and (min-width: 1080px) {
   .section__products .lista__produtos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     place-items: center;
   }
 }
@@ -130,7 +177,10 @@ body {
   .section__products .section__products--div {
     padding: 0 8px;
   }
-  .section__products .section__products--div .lista__produtos {
+  .section__products .lista__produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
     margin: 12px 0;
   }
 }
