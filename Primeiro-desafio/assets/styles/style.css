@@ -194,6 +194,11 @@ body {
   outline: 0;
 }
 
+@media screen and (min-width: 1440px) {
+  .rodape {
+    padding: 16px;
+  }
+}
 .section__fale-conosco {
   background: #EAF2FD;
 }
@@ -261,4 +266,18 @@ body {
   height: 40px;
   color: #ffffff;
   border: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .section__fale-conosco {
+    padding: 32px 128px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__fale-conosco .section__fale-conosco-div__logo {
+    text-align: left;
+  }
+  .section__fale-conosco .section__fale-conosco-ajudas {
+    text-align: left;
+  }
 }/*# sourceMappingURL=style.css.map */
