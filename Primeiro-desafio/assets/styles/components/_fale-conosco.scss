@@ -74,6 +74,36 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+
+    .section__fale-conosco{
+        padding: 24px 32px;
+        display: grid;
+        grid-template-columns: 0.4fr 0.6fr;
+        // grid-template-rows: 1fr;
+        // column-gap: 64px;
+        
+        .section__fale-conosco-div__logo{
+            text-align: left;
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+        .section__fale-conosco-ajudas{
+            text-align: left;
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+
+        .formulario{
+            grid-column-start:  2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        
+    }
+    
+}
+
 @media screen and (min-width: 1440px) {
 
     .section__fale-conosco{

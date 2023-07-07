@@ -16,8 +16,6 @@ body {
   border: 1px solid #2A7AE4;
   color: #2A7AE4;
   background-color: #FFFFFF;
-  transition: 0.5s;
-  cursor: pointer;
   width: 144px;
   height: 48px;
 }
@@ -26,24 +24,79 @@ body {
   .cabecalho {
     padding: 24px 32px;
   }
-}
-@media screen and (min-width: 1080px) {
-  .section__products .lista__produtos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    place-items: center;
+  .cabecalho .cabecalho__logo-input {
+    display: flex;
+    gap: 32px;
+  }
+  .cabecalho .cabecalho__search {
+    display: block;
+    width: 250px;
+    height: 30px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 20px;
+    gap: 8px;
+    background-color: #F5F5F5;
+    border: none;
+  }
+  .cabecalho .cabecalho__search::-moz-placeholder {
+    background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
+    background-position: 17em 0px;
+    opacity: 0.5;
+  }
+  .cabecalho .cabecalho__search::placeholder {
+    background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
+    background-position: 17em 0px;
+    opacity: 0.5;
+  }
+  .cabecalho .cabecalho__botao {
+    width: 168px;
+  }
+  .cabecalho .cabecalho__botao:active {
+    background-color: #5595E9;
+  }
+  .cabecalho .lupa {
+    display: none;
   }
 }
 @media screen and (min-width: 1440px) {
-  .section__products {
-    margin: 32px 0;
-    padding: 16px 128px;
+  .cabecalho {
+    padding: 32px 128px;
   }
-  .section__products .section__products--div {
-    padding: 0 8px;
+  .cabecalho .cabecalho__logo-input {
+    display: flex;
+    gap: 32px;
   }
-  .section__products .section__products--div .lista__produtos {
-    margin: 12px 0;
+  .cabecalho .cabecalho__search {
+    display: block;
+    width: 350px;
+    height: 30px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 20px;
+    gap: 8px;
+    background-color: #F5F5F5;
+    border: none;
+  }
+  .cabecalho .cabecalho__search::-moz-placeholder {
+    background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
+    background-position: 25em 0px;
+    opacity: 0.5;
+  }
+  .cabecalho .cabecalho__search::placeholder {
+    background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
+    background-position: 25em 0px;
+    opacity: 0.5;
+  }
+  .cabecalho .cabecalho__botao {
+    width: 188px;
+    cursor: pointer;
+  }
+  .cabecalho .cabecalho__botao:hover {
+    background-color: #2A7AE4;
+    color: white;
+    transition: 0.5s;
+  }
+  .cabecalho .cabecalho__botao:active {
+    background-color: #5595E9;
   }
 }
 .banner {
@@ -268,6 +321,28 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .section__fale-conosco {
+    padding: 24px 32px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+  }
+  .section__fale-conosco .section__fale-conosco-div__logo {
+    text-align: left;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  .section__fale-conosco .section__fale-conosco-ajudas {
+    text-align: left;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .section__fale-conosco .formulario {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
 @media screen and (min-width: 1440px) {
   .section__fale-conosco {
     padding: 32px 128px;
