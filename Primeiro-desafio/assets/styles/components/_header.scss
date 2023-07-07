@@ -1,3 +1,5 @@
+@import '../abstract/_variaveis.scss';
+
 .cabecalho{
     padding: 24px 16px;
     display: flex;
@@ -24,6 +26,7 @@
         padding: 24px 32px;
         .cabecalho__logo-input{
             display: flex;
+            align-items: center;
             gap: 32px
         }
         .cabecalho__search{
@@ -86,19 +89,9 @@
 
         .cabecalho__botao{
             width:188px;
-            cursor: pointer;
-            &:hover{
-                background-color: #2A7AE4;
-                color: white;
-                transition: .5s;
-            }
-            &:active{
-                background-color:#5595E9;
-            }
+           @include animacoesBotao();
         }
-
     }
-
 }
 
 

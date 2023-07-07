@@ -8,12 +8,38 @@ $fonte-titulo-produtos: 1.375rem;
 $fonte-titulo-banner: 3.25rem;
 $fonte-texto-banner: 1.375rem;
 
+// fonte 16px
+
+$fonte-tamanho-padrao: 1rem;
+
 //cores
 
 $cor-banner: #ffffff;
 $cor-titulo-produtos: #464646;
 
 $cor-ancora: #2A7AE4;
+
 $cor-de-fundo: #EAF2FD;
 
 $cor-texto-padrao: #464646;
+
+//botoes
+
+$cor-de-fundo-botoes: #2A7AE4;
+$cor-fonte-botao: #ffffff;
+
+$cor-placeholder: #A2A2A2;
+
+//funções
+
+@mixin animacoesBotao(){
+    &:hover{
+        cursor: pointer;
+        background-color: #2A7AE4;
+        color: white;
+        transition: .5s;
+    }
+    &:active{
+        background-color:#5595E9;
+    }
+}
