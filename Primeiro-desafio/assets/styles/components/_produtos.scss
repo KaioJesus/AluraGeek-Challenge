@@ -1,9 +1,11 @@
+@import '../abstract/variaveis';
 
 .section__products{
     padding: 16px 16px;
     .section__products--div{
         display: flex;
         justify-content: space-between;
+        align-self: center;
 
         .section__product--title{
             font-size: $fonte-titulo-produtos;
@@ -17,6 +19,7 @@
             text-decoration: none;
             font-size: $fonte-padrao;
         }
+
     }
 
     .lista__produtos{

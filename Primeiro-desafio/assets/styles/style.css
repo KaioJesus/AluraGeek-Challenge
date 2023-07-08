@@ -159,6 +159,7 @@ body {
 .section__products .section__products--div {
   display: flex;
   justify-content: space-between;
+  align-self: center;
 }
 .section__products .section__products--div .section__product--title {
   font-size: 1.375rem;
@@ -276,12 +277,11 @@ body {
   padding: 8px 12px;
 }
 .section__fale-conosco .formulario .formulario__campos .formulario__titulo {
-  font-size: 0.9rem, 2px;
+  font-size: calc(0.9rem + 0.2px);
   font-weight: 700;
 }
 .section__fale-conosco .formulario .formulario__campos .formulario__input {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-radius: 4px;
   margin: 8px 0;
   width: 98%;
   height: 48px;
@@ -298,8 +298,7 @@ body {
   font-size: -1.1rem, 4px;
 }
 .section__fale-conosco .formulario .formulario__campos .formulario__textarea {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-radius: 4px;
   margin: 8px 0;
   width: 100%;
   border: none;
@@ -337,6 +336,7 @@ body {
     text-align: left;
     grid-column-start: 1;
     grid-row-start: 2;
+    grid-row-end: 2;
   }
   .section__fale-conosco .formulario {
     grid-column-start: 2;
@@ -454,5 +454,43 @@ body {
   }
   .login .formulario__login .botao__entrar:active {
     background-color: #5595E9;
+  }
+}
+.section__products .section__products--div {
+  display: block;
+}
+.section__products .section__products--div .botao__produtos {
+  background-color: #2A7AE4;
+  border: none;
+  width: 150px;
+  height: 40px;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .section__products .section__products--div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section__products .section__products--div .botao__produtos {
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section__products .section__products--div .botao__produtos:hover {
+    cursor: pointer;
+    background-color: #0e53ad;
+    color: white;
+    transition: 0.5s;
+  }
+  .section__products .section__products--div .botao__produtos:active {
+    background-color: #5595E9;
+  }
+  .section__products .lista__produtos .gap {
+    margin-bottom: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
