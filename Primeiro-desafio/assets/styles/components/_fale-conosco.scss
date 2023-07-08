@@ -98,6 +98,13 @@
             grid-column-start:  2;
             grid-row-start: 1;
             grid-row-end: 2;
+
+            .formulario__campos{
+
+                .formulario__botao{
+                    @include animacoesBotao(#0e53ad);
+                }
+            }
         }
         
     }

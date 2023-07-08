@@ -32,14 +32,29 @@ $cor-placeholder: #A2A2A2;
 
 //funções
 
-@mixin animacoesBotao(){
+@mixin animacoesBotao($cor){
     &:hover{
         cursor: pointer;
-        background-color: #2A7AE4;
+        background-color: $cor;
         color: white;
         transition: .5s;
     }
     &:active{
         background-color:#5595E9;
+    }
+}
+
+@mixin formulario($largura, $altura){
+    border-radius: 4px;
+    border: none;
+    width: $largura;
+    height: $altura;
+    margin: 8px 0;
+    padding: 16px 0 16px 8px;
+    gap: 4px;
+
+    &::placeholder{
+        font-size: $fonte-tamanho-padrao;
+        color: $cor-placeholder;
     }
 }

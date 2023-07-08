@@ -89,7 +89,7 @@
 
         .cabecalho__botao{
             width:188px;
-           @include animacoesBotao();
+           @include animacoesBotao(#2A7AE4);
         }
     }
 }
