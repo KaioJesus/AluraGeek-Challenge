@@ -506,7 +506,7 @@ body {
 }
 .administrador .formulario__adm .input__adiciona-produtos {
   display: block;
-  width: 97.5%;
+  width: 99%;
   height: 56px;
   border: none;
   border-bottom: 1px solid grey;
@@ -519,12 +519,14 @@ body {
   position: absolute;
   top: 8px;
   left: 8px;
+  color: #A2A2A2;
 }
 .administrador .formulario__adm .input__adiciona-produtos::placeholder {
   font-size: 12px;
   position: absolute;
   top: 8px;
   left: 8px;
+  color: #A2A2A2;
 }
 .administrador .formulario__adm .textarea__adiciona-produto {
   display: block;
@@ -534,8 +536,51 @@ body {
   background-color: #2A7AE4;
   border: none;
   width: 100%;
-  height: 40px;
+  height: 50px;
   font-size: 0.9rem;
   color: #ffffff;
   align-self: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .administrador {
+    padding: 72px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .administrador .formulario__adm .adm__titulo {
+    font-size: 32px;
+  }
+  .administrador .formulario__adm .input__adiciona-produtos {
+    width: 560px;
+  }
+  .administrador .formulario__adm .input__adiciona-produtos::-moz-placeholder {
+    font-size: 12px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  .administrador .formulario__adm .input__adiciona-produtos::placeholder {
+    font-size: 12px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  .administrador .formulario__adm .textarea__adiciona-produto {
+    display: block;
+    padding-bottom: 16px;
+  }
+  .administrador .formulario__adm .botao__adicionar {
+    font-size: 1rem;
+  }
+  .administrador .formulario__adm .botao__adicionar:hover {
+    cursor: pointer;
+    background-color: #0e53ad;
+    color: white;
+    transition: 0.5s;
+  }
+  .administrador .formulario__adm .botao__adicionar:active {
+    background-color: #5595E9;
+  }
 }/*# sourceMappingURL=style.css.map */

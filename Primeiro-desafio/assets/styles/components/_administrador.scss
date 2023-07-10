@@ -14,7 +14,7 @@
 
         .input__adiciona-produtos{
             display: block;
-            width: 97.5%;
+            width: 99%;
             height: 56px;
             border: none;
             border-bottom: 1px solid grey;
@@ -27,6 +27,7 @@
                 position: absolute;
                 top: 8px;;
                 left: 8px;
+                color: #A2A2A2;
             }
 
         }
@@ -40,11 +41,49 @@
             background-color: $cor-de-fundo-botoes;
             border: none;
             width: 100%;
-            height: 40px;
+            height: 50px;
             font-size: $fonte-padrao;
             color: $cor-fonte-botao;
             align-self: center;
         }
     }
 
+}
+
+@media screen and (min-width: 1440px) {
+
+    .administrador{
+        padding: 72px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .formulario__adm{
+            .adm__titulo{
+                font-size: 32px;
+            }
+    
+            .input__adiciona-produtos{
+                width: 560px;
+    
+                &::placeholder{
+                    font-size: 12px;
+                    position: absolute;
+                    top: 8px;;
+                    left: 8px;
+                }
+    
+            }
+    
+            .textarea__adiciona-produto{
+                display: block;
+                padding-bottom: 16px;
+            }
+    
+            .botao__adicionar{
+                font-size: $fonte-tamanho-padrao;
+                @include animacoesBotao( #0e53ad);
+            }
+        }
+    }
 }
