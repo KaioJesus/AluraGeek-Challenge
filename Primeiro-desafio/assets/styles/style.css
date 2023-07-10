@@ -41,12 +41,12 @@ body {
   }
   .cabecalho .cabecalho__search::-moz-placeholder {
     background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
-    background-position: 17em 0px;
+    background-position: 14.25em 0px;
     opacity: 0.5;
   }
   .cabecalho .cabecalho__search::placeholder {
     background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
-    background-position: 17em 0px;
+    background-position: 14.25em 0px;
     opacity: 0.5;
   }
   .cabecalho .cabecalho__botao {
@@ -79,12 +79,12 @@ body {
   }
   .cabecalho .cabecalho__search::-moz-placeholder {
     background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
-    background-position: 25em 0px;
+    background-position: 21em 0px;
     opacity: 0.5;
   }
   .cabecalho .cabecalho__search::placeholder {
     background: url(../../../../Primeiro-desafio/assets/imgs/lupa.svg) no-repeat;
-    background-position: 25em 0px;
+    background-position: 21em 0px;
     opacity: 0.5;
   }
   .cabecalho .cabecalho__botao {
@@ -493,4 +493,49 @@ body {
   .section__products .lista__produtos .gap {
     margin-bottom: 32px;
   }
+}
+.administrador {
+  padding: 24px 16px;
+  height: 480px;
+  background-color: #F5F5F5;
+}
+.administrador .formulario__adm .adm__titulo {
+  font-size: 1.375rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.administrador .formulario__adm .input__adiciona-produtos {
+  display: block;
+  width: 97.5%;
+  height: 56px;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-bottom: 16px;
+  padding: 0px 8px;
+  outline: 0;
+}
+.administrador .formulario__adm .input__adiciona-produtos::-moz-placeholder {
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.administrador .formulario__adm .input__adiciona-produtos::placeholder {
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.administrador .formulario__adm .textarea__adiciona-produto {
+  display: block;
+  padding-bottom: 16px;
+}
+.administrador .formulario__adm .botao__adicionar {
+  background-color: #2A7AE4;
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  align-self: center;
 }/*# sourceMappingURL=style.css.map */

@@ -12,23 +12,32 @@
     <body>
         <header class="cabecalho">
             <div class="cabecalho__logo-input">
-                <h1 class="cabecalho__logo"><a href="../../index.html"><img src="../imgs/Logo.png"/></a></h1>
+                <h1 class="cabecalho__logo"><a href="#"><img src="../imgs/Logo.png"/></a></h1>
                 <input class="cabecalho__search" type="search" placeholder="O que voce deseja encontrar?"/>
             </div>
+            <a target="_blank" href=""> <input class="cabecalho__botao" type="button" value="Menu administrador"/> </a>
             <img class="lupa" src="../imgs/lupa.svg" alt="Lupa no campo de pesquisa">
         </header>
         <main>
-           <section class="login">
-                <form class="formulario__login" action="">
-                    <h1 class="login__titulo">Iniciar Sessão</h1>
-                    <label for="usuario"></label>
-                    <input class="usuario" type="email" placeholder="Escreva seu email" id="usuario">
+            <section class="administrador">
+                <form class="formulario__adm" action="">
+                    <h1 class="adm__titulo">Adicionar novo produto</h1>
+                    <label for="url"></label>
+                    <input class="input__adiciona-produtos" type="text" placeholder="URL da imagem" id="url">
 
-                    <label for="senha"></label>
-                    <input class="senha" type="password" placeholder="Escreva sua senha" id="senha">
+                    <label for="categoria"></label>
+                    <input class="input__adiciona-produtos" type="text" placeholder="Categoria" id="categoria">
 
-                    <a class="link__redefinir" href="#">Esqueceu a senha?</a>
-                    <input class="botao__entrar" type="submit" value="Entrar" id="">
+                    <label for="nomeProduto"></label>
+                    <input class="input__adiciona-produtos" type="text" placeholder="Nome do produto" id="nomeProduto">
+
+                    <label for="precoProduto"></label>
+                    <input class="input__adiciona-produtos" type="text" placeholder="Preço do produto" id="precoProduto">
+
+                    <label for="descricaoProduto"></label>
+                    <textarea class="input__adiciona-produtos textarea__adiciona-produto" cols="" rows="" placeholder="Descrição do produto" id="precoProduto"></textarea>
+
+                    <input class="botao__adicionar" type="submit" value="Adicionar produto" id="">
                 </form>
            </section>
         </main>
