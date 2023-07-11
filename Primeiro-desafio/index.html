@@ -24,7 +24,7 @@
                 <div class="inner--banner">
                     <h2 class="banner__titulo">Dezembro Promocional</h2>
                     <p class="banner__descricao">Produtos selecionados com 33% de desconto</p>
-                    <input class="banner__botao" type="button" value="Ver consoles">
+                    <a href="#consoles"><input class="banner__botao" type="button" value="Ver consoles"></a>
                 </div>
             </section>
             <section class="section__products">
@@ -71,7 +71,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section__products">
+            <section id="consoles" class="section__products">
                 <div class="section__products--div">
                     <h3 class="section__product--title">Consoles</h3>
                     <a href="./assets/pages/produtos.html" target="_blank" class="section__products--anchor">Ver tudo <img src="./assets/imgs/seta-vetor.svg"/></a>
@@ -190,8 +190,8 @@
                 <fieldset class="formulario__campos">
                     <legend class="formulario__titulo">Fale Conosco</legend>
                     <label for="nome"></label>
-                    <input class="formulario__input" type="text" placeholder="Nome" id="nome" required maxlength="50" minlength="3">
-                    <textarea cols="45" rows="5" class="formulario__textarea" placeholder="Escreva sua mensagem" maxlength="300"></textarea>
+                    <input class="formulario__input" type="text" placeholder="Nome" id="nome" required maxlength="40" minlength="3">
+                    <textarea cols="45" rows="5" class="formulario__textarea" placeholder="Escreva sua mensagem" maxlength="120" required></textarea>
                     <input class="formulario__botao" type="submit" value="Enviar mensagem">
                 </fieldset>
             </form>

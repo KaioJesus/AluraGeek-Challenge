@@ -68,6 +68,18 @@
                 padding: 20px 0 16px;
                 color:$cor-banner;
             }
+
+            .banner__botao{
+                background-color: #2A7AE4;
+                width: 120px;
+                height: 40px;
+                color:$cor-banner;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    @include animacoesBotao(#2A7AE4);
+                }
+            }
         }
     
     }
