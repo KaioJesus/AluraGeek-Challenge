@@ -40,34 +40,50 @@
                 height: 48px;
                 border: none;
                 border-bottom: 1px solid gray;
-                padding: 2px 4px;
+                padding: 2px 8px;
+                outline: 0;
 
                 &::placeholder{
                   padding: 4px 4px;  
-                  font-size: $fonte-padrao - 2,4px;
+                  font-size: calc($fonte-padrao - 2.4px);
+                  position: absolute;
+                  top: 4px;
+                  left: 4px;
+                  color: #A2A2A2;
                 }
             }
-
+            
             .formulario__textarea{
                 border-radius: 4px;
                 margin: 8px 0;
                 width: 100%;
                 border: none;
                 border-bottom: 1px solid gray;
-                padding: 4px 0;
+                padding: 4px 4px;
+                outline: 0;
                 &::placeholder{
                     padding: 12px 8px;  
-                    font-size: $fonte-padrao + 0,2px
+                    font-size: $fonte-padrao + 0,2px;
+                    color: #A2A2A2;
+                    
                   }
             }
 
-            .formulario__botao{
-                background-color: #2A7AE4;
-                width: 150px;
-                height: 40px;
-                color:$cor-banner;
-                border: none;
+            .mensagem-erro{
+                color: red;
+                font-size: 12px;
+                position: relative;
+                top: -8px;
+                left: 6px;
             }
+            
+        }
+        .formulario__botao{
+            background-color: #2A7AE4;
+            width: 150px;
+            height: 40px;
+            color:$cor-banner;
+            border: none;
         }
     }
 }
@@ -103,11 +119,8 @@
             grid-row-start: 1;
             grid-row-end: 2;
 
-            .formulario__campos{
-
-                .formulario__botao{
-                    @include animacoesBotao(#0e53ad);
-                }
+            .formulario__botao{
+                @include animacoesBotao(#0e53ad);
             }
         }
         
@@ -119,15 +132,21 @@
 
     .section__fale-conosco{
         padding: 32px 128px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-between;
 
         .section__fale-conosco-div__logo{
             text-align: left;
         }
         .section__fale-conosco-ajudas{
+            grid-column-start: 2;
             text-align: left;
             margin-top: 0;
+        }
+
+        .formulario{
+            grid-column-start: 3;
         }
         
     }
