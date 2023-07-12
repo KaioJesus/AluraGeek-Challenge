@@ -2,8 +2,13 @@
 
 
 .section__products{
-    .section__products--div{
+
+    .block{
         display: block;
+    }
+    
+    .section__products--div{
+        // display: block;
 
         .botao__produtos{
             background-color: $cor-de-fundo-botoes;
