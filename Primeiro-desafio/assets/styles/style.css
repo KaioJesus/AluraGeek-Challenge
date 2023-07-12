@@ -354,10 +354,13 @@ body {
     grid-row-start: 1;
   }
   .section__fale-conosco .section__fale-conosco-ajudas {
+    margin-top: 52px;
     text-align: left;
     grid-column-start: 1;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 1;
+  }
+  .section__fale-conosco .section__fale-conosco-ajudas .lista__fale-conosco .item__fale-conosco {
+    padding: 12px;
   }
   .section__fale-conosco .formulario {
     grid-column-start: 2;
@@ -385,6 +388,7 @@ body {
   }
   .section__fale-conosco .section__fale-conosco-ajudas {
     text-align: left;
+    margin-top: 0;
   }
 }
 .login {

@@ -86,10 +86,16 @@
             grid-row-start: 1;
         }
         .section__fale-conosco-ajudas{
+            margin-top: 52px;
             text-align: left;
             grid-column-start: 1;
-            grid-row-start: 2;
-            grid-row-end: 2;
+            grid-row-start: 1;
+
+            .lista__fale-conosco{
+                .item__fale-conosco{
+                    padding: 12px;
+                }
+            }
         }
 
         .formulario{
@@ -115,11 +121,13 @@
         padding: 32px 128px;
         display: flex;
         justify-content: space-between;
+
         .section__fale-conosco-div__logo{
             text-align: left;
         }
         .section__fale-conosco-ajudas{
             text-align: left;
+            margin-top: 0;
         }
         
     }
