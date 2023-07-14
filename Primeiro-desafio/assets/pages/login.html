@@ -23,12 +23,15 @@
                     <h1 class="login__titulo">Iniciar Sessão</h1>
                     <label for="usuario"></label>
                     <input class="usuario" type="email" placeholder="Escreva seu email" id="usuario">
-
+                    <span id="span__erro"></span>
+                    
                     <label for="senha"></label>
                     <input class="senha" type="password" placeholder="Escreva sua senha" id="senha">
-
+                    <span id="span__erro"></span>
+                    
                     <a class="link__redefinir" href="#">Esqueceu a senha?</a>
-                    <input class="botao__entrar" type="submit" value="Entrar" id="">
+                    <input disabled="true" class="botao__entrar" type="submit" value="Entrar" id="">
+                    <span id="span__erro"></span>
                 </form>
            </section>
         </main>
@@ -71,15 +74,16 @@
                     <textarea cols="45" rows="5" class="formulario__textarea" placeholder="Escreva sua mensagem" maxlength="120" required name="mensagem"></textarea>
                     <span class="mensagem-erro"></span>
                     
-                    
-                    <input class="formulario__botao" type="submit" value="Enviar mensagem">
-                    <span class="mensagem-erro"></span>
                 </fieldset>
+                
+                <input class="formulario__botao" type="submit" value="Enviar mensagem">
+                <span class="mensagem-erro"></span>
             </form>
         </section>
         <footer class="rodape">
             <p>© Desenvolvido por <a target="_blank" class="rodape__ancora" href="http://linkedin.com/in/kaio-jesus">Kaio Jesus</a><br /> 2023</p>
         </footer>
         <script type="module" src="../js/form.js"></script>
+        <script type="module" src="../js/login.js"></script>
     </body>
 </html>

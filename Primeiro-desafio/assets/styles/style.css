@@ -452,6 +452,13 @@ body {
   font-size: 1rem;
   color: #A2A2A2;
 }
+.login .formulario__login .error {
+  color: red;
+  font-size: 12px;
+  position: relative;
+  left: 8px;
+  padding: 8px 0;
+}
 .login .formulario__login .link__redefinir {
   text-decoration: none;
   padding: 8px 0;
@@ -467,6 +474,10 @@ body {
   font-size: 0.9rem;
   color: #ffffff;
   align-self: center;
+}
+.login .formulario__login .botao__entrar:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 @media screen and (min-width: 1440px) {

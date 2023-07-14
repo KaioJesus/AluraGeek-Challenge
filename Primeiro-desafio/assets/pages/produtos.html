@@ -161,14 +161,23 @@
                     </li>
                 </ul>
             </div>
-            <form class="formulario">
+            <<form class="formulario" data-formulario>
                 <fieldset class="formulario__campos">
                     <legend class="formulario__titulo">Fale Conosco</legend>
+
                     <label for="nome"></label>
-                    <input class="formulario__input" type="text" placeholder="Nome" id="nome" required maxlength="50" minlength="3">
-                    <textarea cols="45" rows="5" class="formulario__textarea" placeholder="Escreva sua mensagem" maxlength="300"></textarea>
-                    <input class="formulario__botao" type="submit" value="Enviar mensagem">
+                    <input class="formulario__input" type="text" placeholder="Nome" id="nome" required maxlength="40" minlength="3" name="nome">
+                    <span class="mensagem-erro"></span>
+
                 </fieldset>
+                <fieldset class="formulario__campos">
+                    <textarea cols="45" rows="5" class="formulario__textarea" placeholder="Escreva sua mensagem" maxlength="120" required name="mensagem"></textarea>
+                    <span class="mensagem-erro"></span>
+                    
+                </fieldset>
+                
+                <input class="formulario__botao" type="submit" value="Enviar mensagem">
+                <span class="mensagem-erro"></span>
             </form>
         </section>
         <footer class="rodape">
