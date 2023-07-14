@@ -1,9 +1,9 @@
 const init = () => {
+    const span = document.getElementById('span__erro');
     const validateEmail = (event) => {
         const input = event.currentTarget;
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         const emailTest = regex.test(input.value);
-        const span = document.getElementById('span__erro');
 
         if(!emailTest) {
             submitButton.setAttribute("disabled", "disabled");
@@ -13,6 +13,7 @@ const init = () => {
         } else {
             submitButton.removeAttribute("disabled");
             input.nextElementSibling.classList.remove('error');
+            span.textContent = ``;
         }
     }
 
@@ -21,40 +22,32 @@ const init = () => {
 
         if(input.value.length < 8) {
             submitButton.setAttribute("disabled", "disabled");
-            input.nextElementSibling.classList.add('error');
-            span.innerHTML = `Senha inválida`;
-        } else {
-            submitButton.removeAttribute("disabled");
-            input.nextElementSibling.classList.remove('error');
-        }
+        } 
+        submitButton.removeAttribute("disabled");
     }
     
     const inputEmail = document.querySelector('input[type="email"]');
     const inputPassword = document.querySelector('input[type="password"]');
     const submitButton = document.querySelector('.botao__entrar');
+    const spanSubmit = document.querySelector("#span__erro-submit");
 
     inputEmail.addEventListener('input', validateEmail);
     inputPassword.addEventListener('input', validatePassowrd);
 
     const errorHandler = () => {
-        submitButton.classList.remove('loading');
-        submitButton.classList.remove('success');
-        submitButton.classList.add('error');
-        submitButton.textContent = "Error :(";
+        spanSubmit.classList.add('error');
+        spanSubmit.textContent = `Usuário ou senha inválida`;
     }
 
     const successHandler = () => {
-        submitButton.classList.remove('loading');
-        submitButton.classList.remove('error');
-        submitButton.classList.add('success');
-        submitButton.textContent = "Sent! :)";
+        spanSubmit.classList.remove('error');
+        spanSubmit.textContent = ``;
+        window.location.href="../pages/administrador.html";
     }
 
     if(submitButton) {
         submitButton.addEventListener('click', (event) => {
             event.preventDefault();
-
-            submitButton.textContent = "Loading...";
 
             fetch('https://reqres.in/api/login', {
                 method: 'POST',
@@ -71,8 +64,7 @@ const init = () => {
                 }
                 
                 successHandler();
-                window.location.href="../pages/administrador.html";
-                
+            
             }).catch(() => {
                 errorHandler();
             })
